@@ -9,7 +9,31 @@
 </head>
 <body>
 
+<div class="viewport">
+    <div class="myimage"></div>
+    <img class="image" id="image" src="image.png" touch-action="none" style="touch-action: none;">
+    <div class="move-line">
+        <div class="move-progress"></div>
+    </div>
+    <div class="flex">
+        <div>
+            Приближение: <span id="pinch-value">0%</span>
+        </div>
+        <div>
+            Яркость: <span id="bright-value">0%</span>
+        </div>
 
+
+    </div>
+</div>
+
+
+
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
 <script src="main.js"></script>
 </body>
 </html>
