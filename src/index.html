@@ -1,37 +1,29 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Лекция 2</title>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" async href="style.css">
-    <meta name="robots" content="noindex">
-</head>
-<body>
-<div class="viewport">
-    <img class="image" id="image" src="image.png" >
-    <div class="move-line">
-        <div class="move-progress"></div>
-    </div>
-    <div class="flex">
-        <!--<div>-->
-            <!--Приближение: <span id="pinch-value">0%</span>-->
-        <!--</div>-->
-        <!--<div>-->
-            <!--Яркость: <span id="bright-value">0%</span>-->
-        <!--</div>-->
-        <div class="test"></div>
-    </div>
-</div>
+    <head>
+        <meta charset = "utf-8" >
+        <meta name="viewport" content="width=device-width">
+        <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+        <link rel="stylesheet" async href="style.css">
+        <meta name="robots" content="noindex">
+    </head>
 
-
-
-
-<script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-        crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
-<script src="slide.js"></script>
-</body>
+    <body>
+        <div class="container">
+            <div class="image-container">
+                <img class="image"  src="./image.png">
+                <div class="fake-pointer"></div>
+            </div>
+            <div class="flex">
+                <div>
+                    Сдвиг
+                    <span class="left">0</span>
+                </div>
+                <div>
+                    Приближение:
+                    <span class="zoom">100</span>%
+                </div>
+            </div>
+        </div>
+        <script src="slide.js"></script>
+    </body>
 </html>
